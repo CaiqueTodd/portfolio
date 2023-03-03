@@ -1,0 +1,27 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    height: 5em;
+    justify-content: space-around;
+    gap: 5em;
+}
+
+.cabecalho__logo img{
+    align-items: start;
+}
+
+.cabecalho__lista {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+
+}
+
+.cabecalho__item a {
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+
+.cabecalho__item a:hover {
+    color: var(--cor-secundaria);
+}

@@ -1,0 +1,21 @@
+@import url("_style/header.css");
+@import url("_style/banner.css");
+@import url("_style/about-me.css");
+@import url("_style/habilidades.css");
+@import url("_style/projetos.css");
+
+:root {
+    --fonte-principal: "Inconsolata";
+    --cor-de-fundo: #181A17;
+    --cor-de-fundo-secundaria: #21201D;
+    --cor-principal: #F0E3CA;
+    --cor-secundaria: #FF8303;
+}
+
+body {
+    font-size: 20px;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    padding: 0 4em;
+}

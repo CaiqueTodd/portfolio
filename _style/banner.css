@@ -1,0 +1,31 @@
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.banner__titulo {
+    font-size: 64px;
+    font-weight: 900;
+    color: var(--cor-secundaria);
+}
+
+.banner__subtitulo {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 0.2em;
+}
+
+.banner__imagem {
+    display: flex;
+    align-items: center;
+}
+
+.banner__imagem img {
+    position: absolute;
+}
+
+.banner__imagem p {
+    color: rgba(163, 87, 9, 0.5);
+}
