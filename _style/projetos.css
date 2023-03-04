@@ -3,4 +3,45 @@
     font-weight: 700;
     color: var(--cor-secundaria);
     text-align: center;
+    margin-top: 2em;
+}
+
+.projetos__lista {
+    display: flex;
+    gap: 1em;
+}
+
+.projetos__item img {
+    width: 100%;
+}
+
+.projetos__item {
+    width: 20%;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 16px;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.item__nome {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 1em 0 0.5em 0;
+}
+
+.item__tecnologia-utilizada {
+    text-align: end;
+    margin: 1em 0;
+}
+
+.item__tecnologia {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.item__tecnologia img {
+    width: 50%;
+    align-items: end;
 }
