@@ -3,6 +3,7 @@
 @import url("_style/about-me.css");
 @import url("_style/habilidades.css");
 @import url("_style/projetos.css");
+@import url("_style/rodape.css");
 
 :root {
     --fonte-principal: "Inconsolata";
