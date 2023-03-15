@@ -30,106 +30,117 @@
     </header>
 
 
-    <section class="banner">
-        <div class="banner__apresentacao">
-            <h1 class="banner__titulo">Caique Andrade,</h1>
-            <p class="banner__subtitulo">Desenvolvedor Full Stack</p>
-        </div>
-
-        <div class="banner__imagem">
-            <img src="_imagens/_logo_caique.png" alt="">
-            <p>let button_menu = document.querySelector(".header_button");</br>
-                let float_menu  = document.querySelector(".header_menu--float");</br>
-                </br>
-                let line_top   = document.querySelector(".header_button_line--top");</br>
-                let line_under = document.querySelector(".header_button_line--bottom");</br>
-                </br>
-                button_menu.isSelected = false;</br>
-                </br>
-                function addEffectWriting(element, time) {</br>
-                  let element_array = element.innerText.split("");</br>
-                </br>
-                  element.count     = 0;</br>
-                  element.innerText = "";</br>
-                </br>
-                  function writeSymbols() {</br>
-                    element.innerText += element_array[element.count];</br>
-                    element.count++;</br>
-                </br>
-                    if (element.count <= element_array.length) {</br>
-                      setTimeout(() => {</br>
-                        writeSymbols();</br>
-                      }, time);</br>
-                    } else if (element.count >= element_array.length) {</br>
+    <main>
+        <section class="banner">
+            <div class="banner__apresentacao">
+                <h1 class="banner__titulo">Caique Andrade,</h1>
+                <p class="banner__subtitulo">Desenvolvedor Full Stack</p>
+            </div>
+            <div class="banner__imagem">
+                <img src="_imagens/_logo_caique.png" alt="">
+                <p>let button_menu = document.querySelector(".header_button");</br>
+                    let float_menu  = document.querySelector(".header_menu--float");</br>
+                    </br>
+                    let line_top   = document.querySelector(".header_button_line--top");</br>
+                    let line_under = document.querySelector(".header_button_line--bottom");</br>
+                    </br>
+                    button_menu.isSelected = false;</br>
+                    </br>
+                    function addEffectWriting(element, time) {</br>
+                      let element_array = element.innerText.split("");</br>
+                    </br>
                       element.count     = 0;</br>
                       element.innerText = "";</br>
-                </br>
+                    </br>
+                      function writeSymbols() {</br>
+                        element.innerText += element_array[element.count];</br>
+                        element.count++;</br>
+                    </br>
+                        if (element.count <= element_array.length) {</br>
+                          setTimeout(() => {</br>
+                            writeSymbols();</br>
+                          }, time);</br>
+                        } else if (element.count >= element_array.length) {</br>
+                          element.count     = 0;</br>
+                          element.innerText = "";</br>
+                    </br>
+                          writeSymbols();</br>
+                        }</br>
+                      }</br>
                       writeSymbols();</br>
-                    }</br>
-                  }</br>
-                  writeSymbols();</br>
-                }
-            </p>
-        </div>
-    </section>
+                    }
+                </p>
+            </div>
+        </section>
+        <section class="about-me">
+            <img src="_imagens/icon.svg" alt="">
+            <p>Estou cursando o 3° Semestre de Ciência da Computação na Universidade São Judas Tadeu (Campus Mooca).</br>
+                Atualmente estou estagiando como suporte help desk, rede e infraestrutura, mas tenho interesse na área de programação e desenvolvimento back-end/front-end. Possuo conhecimento e experiência com</br>
+                </br>
+                • Back-end: Java, Python e SQL.</br>
+                • Front-end: HTML 5, CSS 3 e JavaScript.</br>
+                </br>
+                Estou em constante aprendizado, realizo diversos estudos e pesquisas sobre o assunto, tenho sede de conhecimento e fácil aprendizado! Meu GitHub possui alguns de meus projetos pessoais e acadêmicos</p>
+        </section>
+        <section class="habilidades">
+            <h2 class="habilidades__titulo">Habilidades</h2>
+            <ul class="habilidades__lista">
+                <li class="habilidades__item">
+                    <img src="_imagens/html.svg" alt="">
+                    <h3>HTML5</h3>
+                </li>
+                <li class="habilidades__item">
+                    <img src="_imagens/javascript.svg" alt="">
+                    <h3>JavaScript</h3>
+                </li>
+                <li class="habilidades__item">
+                    <img src="_imagens/css.svg" alt="">
+                    <h3>CSS3</h3>
+                </li>
+            </ul>
+        </section>
+        <section class="projetos">
+            <h2 class="projetos__titulo">My Works</h2>
+            <ul class="projetos__lista">
+                <li class="projetos__item">
+                    <img src="_imagens/Custom-World-Cup__Recortado.png" alt="">
+                    <h3 class="item__nome">Custom World Cup</h3>
+                    <h4 class="item__descricao">Projeto da faculdade desenvolvido em Java e SQL para a copa do mundo de 2022</h4>
+                    <div class="item__tecnologia">
+                        <h3 class="item__tecnologia-utilizada">Tecnologias utilizada:</h3>
+                        <img src="_imagens/logo-java.png" alt="">
+                    </div>
+                </li>
+                <li class="projetos__item">
+                    <img src="_imagens/alura-plus.PNG" alt="">
+                    <h3 class="item__nome">Alura Plus</h3>
+                    <h4 class="item__descricao">Projeto desenvolvido durante o curso de responsividade da Alura</h4>
+                    <div class="item__tecnologia">
+                        <h3 class="item__tecnologia-utilizada">Tecnologias utilizada:</h3>
+                        <img src="_imagens/logo-java.png" alt="">
+                    </div>
+                </li>
+            </ul>
+        </section>    
+    </main>
 
-    <section class="about-me">
-        <img src="_imagens/icon.svg" alt="">
-        <p>Estou cursando o 3° Semestre de Ciência da Computação na Universidade São Judas Tadeu (Campus Mooca).</br>
-            Atualmente estou estagiando como suporte help desk, rede e infraestrutura, mas tenho interesse na área de programação e desenvolvimento back-end/front-end. Possuo conhecimento e experiência com</br>
-            </br>
-            • Back-end: Java, Python e SQL.</br>
-            • Front-end: HTML 5, CSS 3 e JavaScript.</br>
-            </br>
-            Estou em constante aprendizado, realizo diversos estudos e pesquisas sobre o assunto, tenho sede de conhecimento e fácil aprendizado! Meu GitHub possui alguns de meus projetos pessoais e acadêmicos</p>
-    </section>
-
-    <section class="habilidades">
-        <h2 class="habilidades__titulo">Habilidades</h2>
-        <ul class="habilidades__lista">
-            <li class="habilidades__item">
-                <img src="_imagens/html.svg" alt="">
-                <h3>HTML5</h3>
+    <footer class="rodape">
+        <h2>Contato</h2>
+        <ul class="contato">
+            <li>
+                <img src="" alt="Logo Linkedin">
+                <p><a href="https://www.linkedin.com/in/caique-dev/"></a>Linkedin</p>
             </li>
-
-            <li class="habilidades__item">
-                <img src="_imagens/javascript.svg" alt="">
-                <h3>JavaScript</h3>
+            <li>
+                <img src="" alt="Logo email">
+                <p><a href=#$">caiquetodd@hotmail.com</a></p>
             </li>
-
-            <li class="habilidades__item">
-                <img src="_imagens/css.svg" alt="">
-                <h3>CSS3</h3>
+            <li>
+                <img src="" alt="Logo GitHub">
+                <p><a href="https://github.com/CaiqueTodd" target="_blank">GitHub</a></p>
             </li>
-        </ul>
-    </section>
-
-    <section class="projetos">
-        <h2 class="projetos__titulo">My Works</h2>
-        <ul class="projetos__lista">
-            <li class="projetos__item">
-                <img src="_imagens/Custom-World-Cup__Recortado.png" alt="">
-                <h3 class="item__nome">Custom World Cup</h3>
-                <h4 class="item__descricao">Projeto da faculdade desenvolvido em Java e SQL para a copa do mundo de 2022</h4>
-                <div class="item__tecnologia">
-                    <h3 class="item__tecnologia-utilizada">Tecnologias utilizada:</h3>
-                    <img src="_imagens/logo-java.png" alt="">
-                </div>
-            </li>
-
-            <li class="projetos__item">
-                <img src="_imagens/alura-plus.PNG" alt="">
-                <h3 class="item__nome">Alura Plus</h3>
-                <h4 class="item__descricao">Projeto desenvolvido durante o curso de responsividade da Alura</h4>
-                <div class="item__tecnologia">
-                    <h3 class="item__tecnologia-utilizada">Tecnologias utilizada:</h3>
-                    <img src="_imagens/logo-java.png" alt="">
-                </div>
-            </li>
-        </ul>   
-    </section>
-
-
+        </ul>        
+    </footer>
 </body>
 
 </html>
