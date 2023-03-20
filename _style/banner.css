@@ -24,8 +24,26 @@
 
 .banner__imagem img {
     position: absolute;
+    align-items: center;
 }
 
 .banner__imagem p {
     color: rgba(163, 87, 9, 0.5);
+}
+
+@media screen and (max-width: 1023px ) {
+    .banner {
+       flex-direction: column;
+       margin: 10em 0 0 0;
+    }
+
+    .banner__imagem {
+        display: flex;
+        justify-content: center;
+        margin: 2em 0 0 0;
+    }
+
+    .about-me {
+        width: auto;
+    }
 }
